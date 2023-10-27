@@ -1,0 +1,80 @@
+
+.search_bar {
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    background-color: rgb(227, 227, 235);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Changed color to blue (0, 0, 255) */
+    display: inline-block;
+    margin-top: 50px;
+}
+
+
+/* Form group styles */
+.form_group span {
+    font-size: 1.8rem;
+    color: orangered;
+}
+
+.form_group input {
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    color: var(--heading-color);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.form_group input:focus {
+    outline: none;
+}
+
+.form_group h6 {
+    margin-bottom: 0;
+}
+
+/* Add a border to the form_group-fast class */
+.form_group-fast {
+    border-right: 2px solid #ddd; /* Removed the space between '2' and 'px' */
+}
+
+.search_icon {
+    font-size: 1.6rem;
+    padding: 0.5em;
+    background: var(--secondary-color);
+    color:#fff;
+    border-radius: 10px 5px 10px 5px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:992px){
+    .search_bar{
+        width: 100%;
+        border-radius: 2rem;
+    }
+
+    .search_bar form {
+        flex-wrap: wrap;
+    }
+
+    .search_bar form .form__group{
+        width: 48%;
+    }
+}
+
+@media only screen and (max-width:576px){
+        .search_bar form .form__group{
+            width: 100%;
+        }
+
+       .form__group input {
+        font-size: .7rem;
+       } 
+
+       .form__group span i{
+        font-size: 1.1rem;
+       }
+       .form__group h6{
+        font-size: 1rem;
+       }
+}
+
